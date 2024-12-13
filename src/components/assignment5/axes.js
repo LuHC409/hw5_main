@@ -30,7 +30,7 @@ function YAxis(props) {
             <text
               style={{ textAnchor: "start", fontSize: "10px" }}
               x={-offsetX}
-              y={yScale.bandwidth() / 2} 
+              y={yScale.bandwidth() / 2-5} 
             >
               {tickValue}
             </text>

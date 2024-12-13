@@ -10,7 +10,7 @@ export function BarChart(props) {
 
     // 定义 xScale 和 yScale
     const xScale = scaleLinear()
-        .domain([0, maxCount + 100]) // 增加范围以确保 X 轴显示到 2500
+        .domain([0, maxCount + 100]) 
         .range([0, width]);
 
     const yScale = scaleBand()

@@ -23,7 +23,7 @@ function useData(csvPath){
             });
             setData(data);
         });
-    }, []);
+    }, [csvPath]);
     return dataAll;
 }
 
@@ -33,7 +33,7 @@ function useMap(jsonPath) {
         json(jsonPath).then(geoJsonData => {
             setData(geoJsonData);
         })
-    }, []);
+    }, [jsonPath]);
     return data;
 }
 
