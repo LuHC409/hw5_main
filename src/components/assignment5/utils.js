@@ -50,10 +50,13 @@ function groupByAirport(data) {
         return result
     }, {})
 
+  
     //We map the keys to the actual ariorts, this is an way to transform the object we got in the previous step into a list.
     result = Object.keys(result).map(key => result[key])
     return result
 }
+
+
 
 export {
     groupByAirline, groupByAirport
